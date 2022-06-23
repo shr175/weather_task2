@@ -1,0 +1,43 @@
+
+body {
+  margin: 0;
+  background-image: linear-gradient(to right,#eeaeca,#e294e9);
+/* background-image: url("./day.svg"); */
+/* background-repeat: no-repeat; */
+/* background-size: cover; */
+/* background-color:lightblue; */
+
+}
+
+p {
+  text-align: center;
+  color: black;
+
+  
+  /* padding-top: 5%; */
+} 
+
+.weather{
+
+}
+
+h1 {
+  margin-top:  10%;
+  margin-left: 20%;
+  padding-top: 10%;
+  
+}
+h2{
+  margin-left: 20%;
+ 
+}
+h3{
+ margin-left: 20%;
+ padding: auto;
+}
+
+h5{
+  margin-left: 20%;
+}
+
+
