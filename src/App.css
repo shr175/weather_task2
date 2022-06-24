@@ -1,43 +1,99 @@
 
 body {
   margin: 0;
-  background-image: linear-gradient(to right,#eeaeca,#e294e9);
-/* background-image: url("./day.svg"); */
-/* background-repeat: no-repeat; */
-/* background-size: cover; */
+  /* background-image: linear-gradient(to right,#eeaeca,#e294e9); */
+background-image: url("./Day.png");
+background-repeat: no-repeat;
+background-size: cover;
 /* background-color:lightblue; */
 
 }
 
-p {
+.bottom{
+  display: flex;
+  justify-content: space-evenly;
   text-align: center;
-  color: black;
+  width: 100%;
+  margin:1 rem auto;
+  padding:1rem;
+  border-radius: 12px;
+  background-color: rgba(255,255,255,0.2);
+  color:white;
 
-  
-  /* padding-top: 5%; */
-} 
+}
 
 .weather{
 
 }
 
 h1 {
-  margin-top:  10%;
+  
   margin-left: 20%;
-  padding-top: 10%;
+  text-align: center;
+  font-size: 50px;
+  color:white;
+  
   
 }
 h2{
   margin-left: 20%;
+  font-size: 70px;
+  color:white;
+
  
 }
 h3{
  margin-left: 20%;
- padding: auto;
+ margin-bottom: 4rem;
+ font-size: 150%;
+ color:white;
 }
 
-h5{
+h4{
+  margin-left: 20%;
+  color:white;
+}
+
+.sunrise, .sunset , .humidity, .timezone{
+  flex-direction: row;
+
+}
+
+h3{
+  color :white;
   margin-left: 20%;
 }
+
+ .day{
+  background-image: url("./Day.png");
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.night{
+  background-image: url("./night.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  } 
+
+  .set{
+  background-image: url("./sunset.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  }
+
+.weatherStyle{
+  margin-left: 20%;
+
+  }
+
+  .weatherStyle , .h3{
+    flex-direction: column;
+   
+  }
+
+  
+
 
 
