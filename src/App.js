@@ -17,28 +17,28 @@ function WeatherImage({id}) {
   let weatherImage = ""
   switch (true) {
     case id < 300:
-      weatherImage = <img className="forecast-img" src={storm} alt="storm icon" />;
+      weatherImage = <img className="weatherStyle" src={storm} alt="storm icon" />;
       break;
     case id >= 300 && id < 500:
-      weatherImage = <img className="forecast-img" src={drizzle} alt="drizzle icon" />;
+      weatherImage = <img className="weatherStyle" src={drizzle} alt="drizzle icon" />;
       break;
     case id >= 500 && id < 600:
-      weatherImage = <img className="forecast-img" src={rain} alt="rain icon" />;
+      weatherImage = <img className="weatherStyle" src={rain} alt="rain icon" />;
       break;
     case id >= 600 && id < 700:
-      weatherImage = <img className="forecast-img" src={snow} alt="snow icon" />;
+      weatherImage = <img className="weatherStyle" src={snow} alt="snow icon" />;
       break;
     case id >= 700 && id < 800:
-      weatherImage = <img className="forecast-img" src={fog} alt="fog icon" />;
+      weatherImage = <img className="weatherStyle" src={fog} alt="fog icon" />;
       break;
     // case id === 800:
-    //   id = <img className="forecast-img" src={clear} alt="clear icon" />;
+    //   id = <img className="weatherStyle" src={clear} alt="clear icon" />;
     //   break;
     case id === 801:
-      weatherImage = <img className="forecast-img" src={pcloudy} alt="particularly cloudy icon" />;
+      weatherImage = <img className="weatherStyle" src={pcloudy} alt="particularly cloudy icon" />;
       break;
     case id > 800 && id < 806:
-      weatherImage = <img className="forecast-img" src={mcloudy} alt="mostly cloudy icon" />;
+      weatherImage = <img className="weatherStyle" src={mcloudy} alt="mostly cloudy icon" />;
       break;
     default:
       weatherImage = 'missing id';
@@ -108,7 +108,7 @@ var current= time.toString();
     }
   }, [latitude, longitude]); // <-- Have to pass in [] here!
 
-
+// commit
   return (
     <div className='weather'>
     
@@ -124,10 +124,9 @@ var current= time.toString();
  
       </header>
 
-      <div className='weatherStyle'>
       <WeatherImage id={id}/>
-      </div>
 
+    {/* done */}
 <div className='bottom'>
 
   <div className='sunrise'>
